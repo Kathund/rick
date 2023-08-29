@@ -9,7 +9,12 @@
 
 <body>
   <script>
-    window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    const num = Math.floor(Math.random() * 1000000) + 1;
+    let url = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+    if (num === 1) {
+      url = 'https://discord.gg/kathund'
+    }
+    window.location.replace(url);
   </script>
 </body>
 
